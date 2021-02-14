@@ -68,3 +68,5 @@ const teachers = [
     'messageTeacher': 'linkToMessage'
   }
 ]
+
+export default teachers
