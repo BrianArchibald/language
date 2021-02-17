@@ -1,14 +1,16 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
+import Rating from './Rating'
 
-const Teacher = teacher => {
+const Teacher = ({ teacher }) => {
+
   return (
     <Card className="my-3 p-3 rounded">
-      <a href={`/product/${teacher._id}`}>
+      <a href={`/teacher/${teacher._id}`}>
         <Card.Img src={teacher.image}/>
       </a>
       <Card.Body>
-        <a href={`/product/${teacher._id}`}>
+        <a href={`/teacher/${teacher._id}`}>
           <Card.Title as="div">
             <strong>{teacher.name}</strong>
           </Card.Title>
@@ -16,12 +18,13 @@ const Teacher = teacher => {
 
           <Card.Text as="div">
             <div className="my-3">
-              {teacher.rating} from {teacher.numLessons} lessons
+              {/* {teacher.rating} from {teacher.numLessons} lessons */}
+              <Rating value={teacher.rating} text={`${teacher.numLessons} lessons`} color={'#f8e825'}/>
             </div>
           </Card.Text>
 
           <Card.Text as="h3">
-            ${teacher.rate}
+              ${teacher.rate}
           </Card.Text>
 
 
