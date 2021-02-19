@@ -1,20 +1,21 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 import Rating from './Rating'
+import { Link } from 'react-router-dom'
 
 const Teacher = ({ teacher }) => {
 
   return (
     <Card className="my-3 p-3 rounded">
-      <a href={`/teacher/${teacher._id}`}>
+      <Link to={`/teacher/${teacher._id}`}>
         <Card.Img src={teacher.image}/>
-      </a>
+      </Link>
       <Card.Body>
-        <a href={`/teacher/${teacher._id}`}>
+        <Link to={`/teacher/${teacher._id}`}>
           <Card.Title as="div">
             <strong>{teacher.name}</strong>
           </Card.Title>
-        </a>
+        </Link>
 
           <Card.Text as="div">
             <div className="my-3">
