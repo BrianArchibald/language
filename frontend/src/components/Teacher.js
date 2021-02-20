@@ -24,7 +24,7 @@ const Teacher = ({ teacher }) => {
             </div>
           </Card.Text>
 
-          <Card.Text as="h3">
+          <Card.Text as="h4">
               ${teacher.rate}
           </Card.Text>
 
