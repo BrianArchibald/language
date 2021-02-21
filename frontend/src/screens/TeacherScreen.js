@@ -35,16 +35,35 @@ const TeacherScreen = ({ match }) => {
         <Col md={3}>
           <Card>
             <ListGroup variant='flush'>
+
               <ListGroup.Item>
                 <Row>
                   <Col>
-                    Price
+                    Price:
                   </Col>
                   <Col>
                     <strong>Total Cost</strong>
                   </Col>
                 </Row>
               </ListGroup.Item>
+
+              <ListGroup.Item>
+                <Row>
+                  <Col>
+                    Availability:
+                  </Col>
+                  <Col>
+                    <strong>{teacher.online ? 'Online' : 'Not Online'}</strong>
+                  </Col>
+                </Row>
+              </ListGroup.Item>
+
+              <ListGroup.Item>
+                <Button className='btn btn-block' type='button'>
+                  Add to Cart
+                </Button>
+              </ListGroup.Item>
+
             </ListGroup>
           </Card>
 

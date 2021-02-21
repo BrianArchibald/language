@@ -14,7 +14,8 @@ const teachers = [
     'video': 'embeddedVideo',
     'bookTeacher': 'linkToBook',
     'calendarPreview': 'calendarPhoto',
-    'messageTeacher': 'linkToMessage'
+    'messageTeacher': 'linkToMessage',
+    'online': true
   },
   {
     '_id': '2',
@@ -31,7 +32,8 @@ const teachers = [
     'video': 'embeddedVideo',
     'bookTeacher': 'linkToBook',
     'calendarPreview': 'calendarPhoto',
-    'messageTeacher': 'linkToMessage'
+    'messageTeacher': 'linkToMessage',
+    'online': true
   },
   {
     '_id': '3',
@@ -48,7 +50,8 @@ const teachers = [
     'video': 'embeddedVideo',
     'bookTeacher': 'linkToBook',
     'calendarPreview': 'calendarPhoto',
-    'messageTeacher': 'linkToMessage'
+    'messageTeacher': 'linkToMessage',
+    'online': false
   },
   {
     '_id': '4',
@@ -65,7 +68,8 @@ const teachers = [
     'video': 'embeddedVideo',
     'bookTeacher': 'linkToBook',
     'calendarPreview': 'calendarPhoto',
-    'messageTeacher': 'linkToMessage'
+    'messageTeacher': 'linkToMessage',
+    'online': true
   }
 ]
 
