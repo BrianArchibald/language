@@ -59,7 +59,7 @@ const TeacherScreen = ({ match }) => {
               </ListGroup.Item>
 
               <ListGroup.Item>
-                <Button className='btn btn-block' type='button'>
+                <Button className='btn btn-block' disabled={teacher.online === false} type='button'>
                   Add to Cart
                 </Button>
               </ListGroup.Item>
