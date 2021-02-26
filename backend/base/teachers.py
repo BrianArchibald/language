@@ -15,7 +15,7 @@ teachers = [
     'bookTeacher': 'linkToBook',
     'calendarPreview': 'calendarPhoto',
     'messageTeacher': 'linkToMessage',
-    'online': true
+    'online': 'true'
   },
   {
     '_id': '2',
@@ -33,7 +33,7 @@ teachers = [
     'bookTeacher': 'linkToBook',
     'calendarPreview': 'calendarPhoto',
     'messageTeacher': 'linkToMessage',
-    'online': true
+    'online': 'true'
   },
   {
     '_id': '3',
@@ -51,7 +51,7 @@ teachers = [
     'bookTeacher': 'linkToBook',
     'calendarPreview': 'calendarPhoto',
     'messageTeacher': 'linkToMessage',
-    'online': false
+    'online': 'false'
   },
   {
     '_id': '4',
@@ -69,6 +69,6 @@ teachers = [
     'bookTeacher': 'linkToBook',
     'calendarPreview': 'calendarPhoto',
     'messageTeacher': 'linkToMessage',
-    'online': true
+    'online': 'true'
   }
 ]
