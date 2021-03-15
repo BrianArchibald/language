@@ -5,6 +5,7 @@ import axios from 'axios'
 
 
 const HomeScreen = props => {
+
   const [teachers, setTeachers] = useState([])
 
   useEffect(() => {
@@ -12,9 +13,7 @@ const HomeScreen = props => {
       const { data } =  await axios.get('/api/teachers/')
       setTeachers(data)
     }
-
     fetchTeachers()
-
   },[])
 
   return(

@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Button, Card } from 'react-bootstrap'
 import Rating from '../components/Rating'
-import teachers from '../teachers'
+import axios from 'axios'
 
 const TeacherScreen = ({ match }) => {
-  const teacher = teachers.find((t) => t._id === match.params.id)
+
+  const [teacher, setTeacher] = useState([])
+
+  useEffect(() => {
+    async function fetchTeacher() {
+      const { data } =  await axios.get(`/api/teachers/${match.params.id}`)
+      setTeacher(data)
+    }
+    fetchTeacher()
+  },[])
+
   return(
     <div>
       <Link to='/' className='btn btn-light my-3'>Home</Link>
