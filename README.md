@@ -1,1 +1,1 @@
-# Django/React app to connect students and teachers for language learning.
+## Django/React app to connect students and teachers for language learning.
