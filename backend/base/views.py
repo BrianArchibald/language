@@ -3,6 +3,7 @@ from django.http import JsonResponse
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
+from models import Teacher
 from .teachers import teachers
 
 @api_view(['GET'])
@@ -21,6 +22,7 @@ def getRoutes(request):
 
 @api_view(['GET'])
 def getTeachers(request):
+    teachers = Teacher.objects.all()
     return Response(teachers)
 
 @api_view(['GET'])
