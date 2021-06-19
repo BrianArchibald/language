@@ -5,6 +5,7 @@ from rest_framework.decorators import api_view
 
 from models import Teacher
 from .teachers import teachers
+from .serializers import Teacher
 
 @api_view(['GET'])
 def getRoutes(request):
@@ -23,13 +24,11 @@ def getRoutes(request):
 @api_view(['GET'])
 def getTeachers(request):
     teachers = Teacher.objects.all()
-    return Response(teachers)
+    serializer = TeacherSerializer(teachers, many=True)
+    return Response(serializer.data)
 
 @api_view(['GET'])
 def getTeacher(request, pk):
-    teacher = None
-    for i in teachers:
-        if i["_id"] == pk:
-            teacher = i
-            break
-    return Response(teacher)
+    teacher = Teacher.objects.get(_id=pk)
+    serializer = TeacherSerializer(teacher, many=False)
+    return Response(serializer.data)
